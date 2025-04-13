@@ -9,11 +9,14 @@ body {
     bottom: 0;
     background: #141414;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 .stats-block {
+    margin: 6px;
+    padding: 6px;
+    border-radius: 5px;
     color: white;
     font-family: Consolas;
     background: #222;
@@ -26,7 +29,7 @@ body {
     opacity: 0.2;
 }
 .pc-id {
-    color: #AAA;
+    color: #FFF;
     font-weight: bold;
     font-size: 18px;
     display: flex;
@@ -41,20 +44,29 @@ body {
     display: flex;
     flex-direction: row;
 }
+.cpu {
+    font-size: 10px;
+    font-weight: bold;
+}
 .ram-line-progress-bar, .swap-line-progress-bar, .vram-line-progress-bar, .gpuu-line-progress-bar, .cpu-line-progress-bar {
     background: #101010;
-    width: 300px;
-    height: 12px;
+    width: 150px;
+    height: 100%;
 }
 .ram-line-progress-bar-progress, .swap-line-progress-bar-progress, .vram-line-progress-bar-progress, .gpuu-line-progress-bar-progress, .cpu-line-progress-bar-progress {
     background: white;
     width: 0%;
-    height: 12px;
+    height: 100%;
 }
 .ram-line, .swap-line, .vram-line, .gpuu-line, .cpu-line {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.ram-line-label, .swap-line-label, .vram-line-label, .gpuu-line-label, .cpu-line-label {
+    width: 60px;
+    text-align: right;
+    margin-right: 5px;
 }
 .ram-lines, .gpu-lines, .cpu-lines {
     display: flex;

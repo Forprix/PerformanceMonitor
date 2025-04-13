@@ -63,14 +63,14 @@ function formatBytes(numBytes) {
                         <div class="ram">
                             <div class="ram-lines">
                                 <div class="ram-line">
-                                    <div class="ram-line-label">RAM&nbsp;&nbsp;&nbsp;</div>
+                                    <div class="ram-line-label">RAM</div>
                                     <div class="ram-line-progress-bar">
                                         <div class="ram-line-progress-bar-progress"></div>
                                     </div>
                                     <div class="ram-line-text"></div>
                                 </div>
                                 <div class="swap-line">
-                                    <div class="swap-line-label">SWAP&nbsp;&nbsp;</div>
+                                    <div class="swap-line-label">SWAP</div>
                                     <div class="swap-line-progress-bar">
                                         <div class="swap-line-progress-bar-progress"></div>
                                     </div>
@@ -98,17 +98,17 @@ function formatBytes(numBytes) {
                     let el = x.$1(`.gpu${i + 1}`)
                     if (el == null)
                         x.append(el = elementFromHTML(`
-                            <div class="gpu${i + 1}">
+                            <div class="gpu gpu${i + 1}">
                                 <div class="gpu-lines">
                                     <div class="vram-line">
-                                        <div class="vram-line-label">VRAM${i}&nbsp;</div>
+                                        <div class="vram-line-label">VRAM${i}</div>
                                         <div class="vram-line-progress-bar">
                                             <div class="vram-line-progress-bar-progress"></div>
                                         </div>
                                         <div class="vram-line-text"></div>
                                     </div>
                                     <div class="gpuu-line">
-                                        <div class="gpuu-line-label">GPU${i + 1}&nbsp;&nbsp;</div>
+                                        <div class="gpuu-line-label">GPU${i + 1}</div>
                                         <div class="gpuu-line-progress-bar">
                                             <div class="gpuu-line-progress-bar-progress"></div>
                                         </div>
@@ -153,7 +153,7 @@ function formatBytes(numBytes) {
                     if (el == null)
                         x.append(el = elementFromHTML(`
                             <div class="cpu-line cpu-line${i + 1}">
-                                <div class="cpu-line-label">CPU${i + 1}&nbsp;&nbsp;</div>
+                                <div class="cpu-line-label">CPU${i + 1}</div>
                                 <div class="cpu-line-progress-bar">
                                     <div class="cpu-line-progress-bar-progress"></div>
                                 </div>
